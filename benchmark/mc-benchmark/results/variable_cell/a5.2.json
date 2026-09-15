@@ -1,0 +1,170 @@
+[
+  {
+    "a_over_d": 5.2,
+    "energy": -1.343359242196747,
+    "x": [
+      0.0027767876917329385,
+      0.10539066190293017,
+      0.5000000102912849,
+      0.5000000020058899,
+      4.6329553119442346e-12,
+      2.116860606703052e-10
+    ],
+    "angle_degrees": 83.9671629461772,
+    "length_ratio": 0.999999991922231,
+    "max_force": 1.788825109404157e-09,
+    "max_parameter_gradient": 1.7495802170398772e-08,
+    "success": true,
+    "iterations": 40,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "initial_phase": "checkerboard",
+    "seed_index": 2
+  },
+  {
+    "a_over_d": 5.2,
+    "energy": -1.343359242196747,
+    "x": [
+      0.002776782827316364,
+      -0.10539065331775171,
+      0.49999999941944506,
+      0.499999998838968,
+      -3.497471116570254e-11,
+      1.5902091937305937e-11
+    ],
+    "angle_degrees": 96.03283653687913,
+    "length_ratio": 1.0000000006975465,
+    "max_force": 4.1863944524790797e-10,
+    "max_parameter_gradient": 3.782468210696743e-09,
+    "success": true,
+    "iterations": 44,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "initial_phase": "checkerboard",
+    "seed_index": 3
+  },
+  {
+    "a_over_d": 5.2,
+    "energy": -1.343359242196746,
+    "x": [
+      0.0027767845723385546,
+      -0.10539066778185618,
+      0.49999999968332365,
+      0.4999999988417396,
+      -1.953461421949302e-11,
+      4.7793350489513265e-11
+    ],
+    "angle_degrees": 96.03283736918611,
+    "length_ratio": 0.9999999987427163,
+    "max_force": 3.185589886484931e-10,
+    "max_parameter_gradient": 3.196871926493485e-09,
+    "success": true,
+    "iterations": 41,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "initial_phase": "checkerboard",
+    "seed_index": 0
+  },
+  {
+    "a_over_d": 5.2,
+    "energy": -1.3433592421967444,
+    "x": [
+      0.0027767801409788796,
+      0.10539059539714073,
+      0.49999999630557684,
+      0.49999999947399787,
+      3.932562912641857e-11,
+      -1.747202524508629e-11
+    ],
+    "angle_degrees": 83.96716677028384,
+    "length_ratio": 0.9999999999700663,
+    "max_force": 9.282790239496265e-11,
+    "max_parameter_gradient": 8.268667934988207e-10,
+    "success": true,
+    "iterations": 38,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "initial_phase": "checkerboard",
+    "seed_index": 1
+  },
+  {
+    "a_over_d": 5.2,
+    "energy": -1.3432629721959186,
+    "x": [
+      0.07192051946108097,
+      0.5372849689245643,
+      0.33333333155638506,
+      0.3333333328528163,
+      1.5719976340038916e-11,
+      -3.176435271160674e-11
+    ],
+    "angle_degrees": 59.999999827433555,
+    "length_ratio": 0.9999999990426225,
+    "max_force": 1.662560946975443e-10,
+    "max_parameter_gradient": 1.843233889861651e-09,
+    "success": true,
+    "iterations": 45,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "initial_phase": "honeycomb",
+    "seed_index": 1
+  },
+  {
+    "a_over_d": 5.2,
+    "energy": -1.343262972195918,
+    "x": [
+      0.0719205136287782,
+      0.5372849718900982,
+      0.3333333280012604,
+      0.33333333975674123,
+      -1.653250732052538e-11,
+      2.7162369892165063e-11
+    ],
+    "angle_degrees": 59.99999983519462,
+    "length_ratio": 1.0000000106290226,
+    "max_force": 3.5873920949707056e-10,
+    "max_parameter_gradient": 4.058002227831883e-09,
+    "success": true,
+    "iterations": 41,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "initial_phase": "honeycomb",
+    "seed_index": 3
+  },
+  {
+    "a_over_d": 5.2,
+    "energy": -1.3432629721959173,
+    "x": [
+      0.0719205002343742,
+      0.5372850482205641,
+      0.33333331172933894,
+      0.3333333038841973,
+      -3.6033004614767467e-10,
+      3.87824415362502e-10
+    ],
+    "angle_degrees": 59.99999664285326,
+    "length_ratio": 1.0000000695859839,
+    "max_force": 1.812275601794109e-09,
+    "max_parameter_gradient": 1.2776571694917228e-08,
+    "success": true,
+    "iterations": 40,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "initial_phase": "honeycomb",
+    "seed_index": 2
+  },
+  {
+    "a_over_d": 5.2,
+    "energy": -1.3432629721959164,
+    "x": [
+      0.07192051193915927,
+      0.5372849643405567,
+      0.3333333337462007,
+      0.33333333591431796,
+      5.1267525827434564e-11,
+      -4.9922808551783584e-11
+    ],
+    "angle_degrees": 60.00000022572316,
+    "length_ratio": 1.0000000100730355,
+    "max_force": 8.909397213557175e-10,
+    "max_parameter_gradient": 5.354096664298422e-09,
+    "success": true,
+    "iterations": 44,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "initial_phase": "honeycomb",
+    "seed_index": 0
+  }
+]

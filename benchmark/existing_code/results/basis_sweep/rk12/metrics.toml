@@ -1,0 +1,43 @@
+[parameters]
+area = 7238.229473870883
+cell_matrix = [[91.4220294589399, 45.71101472946995], [0.0, 79.17379997697127]]
+d_over_aB_h = 4.83
+electron_mass_in_hole_units = 2.0
+hole_mass_in_hole_units = 1.0
+hole_rs = 8.0
+layers = [1, 1, 2]
+momentum_cutoff_Rk = 12
+n_electrons_down = 36
+n_electrons_up = 36
+n_holes = 36
+number_plane_waves = 469
+species = ["e↑", "e↓", "h"]
+spin_locked = true
+
+[result]
+converged = true
+elapsed_seconds = 279.4553520679474
+energy_per_particle_hartree_h = -0.07634105505766692
+finite_difference_analytic_derivative = 0.11594799906015396
+finite_difference_derivative_error = 0.00045803676195527165
+finite_difference_epsilon = 0.009999999776482582
+finite_difference_numeric_derivative = 0.11548996229819869
+finite_difference_relative_error = 0.003950363660158047
+integrated_electron_density = 72.0000093714098
+integrated_hole_density = 35.99999785919371
+iterations = 14
+max_electron_density = 0.015760079837171523
+max_gradient_component = 7.176458439062117e-6
+max_hole_density = 0.015332911255403172
+optim_converged = true
+paper_energy_per_particle_hartree_h = -0.07652
+termination = "Conjugate Gradient"
+total_energy_hartree_h = -8.244833946228027
+
+[source]
+core_cells = [0, 2, 3, 4, 6, 7]
+driver_sha256 = "1301e1b93603edb92480341e24f10df96e897c9e1a52871e070f9ceb35db09cf"
+hf_engine_cell_sha256 = "1a96374efb032b8a237d389a50542547222bd4a04147dd4ccd270eace8b32de0"
+notebook = "/Users/hyzheng/Library/CloudStorage/OneDrive-UW/Code/eh-hf/Asymmetric-Bilayers----Hartree-Fock.ipynb"
+notebook_sha256 = "f1ab087032e433db006212961284165b31545120c122915ba348432ac4747954"
+runner_sha256 = "c4710f8c39741101b65bc3046ee4e6acf00b10484abbda38ae3ba3727dd5182a"

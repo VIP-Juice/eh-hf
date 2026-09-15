@@ -1,0 +1,240 @@
+{
+  "core": {
+    "fourier_kernel_quadrature_error": 2.6645352591003757e-15,
+    "gradient_fd_error": 1.7870203095071702e-09,
+    "periodicity_energy_error": 3.985700658404312e-14,
+    "ewald_split_energy_spread": 5.329070518200751e-15,
+    "replication": [
+      {
+        "phase": "checkerboard",
+        "Nh": [
+          1,
+          4,
+          16,
+          64
+        ],
+        "energies": [
+          -1.3248811079182914,
+          -1.3248811079182912,
+          -1.32488110791829,
+          -1.3248811079182943
+        ],
+        "spread": 4.218847493575595e-15
+      },
+      {
+        "phase": "honeycomb",
+        "Nh": [
+          1,
+          4,
+          16,
+          64
+        ],
+        "energies": [
+          -1.3248801894675086,
+          -1.3248801894675084,
+          -1.3248801894675108,
+          -1.3248801894675286
+        ],
+        "spread": 2.020605904817785e-14
+      }
+    ],
+    "mc_incremental_energy_drift": 4.440892098500626e-15,
+    "hessian_step_convergence": [
+      {
+        "phase": "checkerboard",
+        "steps": [
+          0.0004,
+          0.0002,
+          0.0001
+        ],
+        "lowest_eigenvalues": [
+          -3.251250688773373e-05,
+          -3.2512510592750294e-05,
+          -3.2512511482320145e-05
+        ],
+        "spread": 4.594586416515299e-12
+      },
+      {
+        "phase": "honeycomb",
+        "steps": [
+          0.0004,
+          0.0002,
+          0.0001
+        ],
+        "lowest_eigenvalues": [
+          8.183899549128191e-05,
+          8.18389959693452e-05,
+          8.18389961042417e-05
+        ],
+        "spread": 6.129597968519002e-13
+      }
+    ],
+    "strain_step_convergence": [
+      {
+        "phase": "checkerboard",
+        "steps": [
+          0.002,
+          0.001,
+          0.0005
+        ],
+        "eigenvalues": [
+          [
+            -0.007496836151865693,
+            0.251674116436007
+          ],
+          [
+            -0.007498484944079564,
+            0.25167311701324024
+          ],
+          [
+            -0.007498893950241836,
+            0.25167287454053167
+          ]
+        ]
+      },
+      {
+        "phase": "honeycomb",
+        "steps": [
+          0.002,
+          0.001,
+          0.0005
+        ],
+        "eigenvalues": [
+          [
+            0.0506294858061143,
+            0.050629486067959875
+          ],
+          [
+            0.05062923902273825,
+            0.05062945529557977
+          ],
+          [
+            0.05062918616249871,
+            0.05062924125820419
+          ]
+        ]
+      }
+    ]
+  },
+  "outputs": {
+    "number_of_runs": 121,
+    "max_saved_energy_error": 0.0,
+    "max_relaxed_force": 4.119485878281982e-07,
+    "states_below_three_branch_envelope": [],
+    "states_below_ideal_two_branch_envelope": [
+      {
+        "case_id": "perturbed_checkerboard_a5.35_n16_s1103",
+        "below_ideal": -2.526447220985162e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.35_n16_s2207",
+        "below_ideal": -2.5264461860352583e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.35_n16_s3301",
+        "below_ideal": -2.5264473342279103e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.42_n16_s1103",
+        "below_ideal": -4.617619913327431e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.42_n16_s3301",
+        "below_ideal": -4.617620019686797e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.44_n64_s4409",
+        "below_ideal": -2.572506648812478e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.4_n16_s1103",
+        "below_ideal": -3.9665451951886865e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.4_n16_s2207",
+        "below_ideal": -3.966545213396344e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.4_n16_s3301",
+        "below_ideal": -3.966545486955297e-06
+      },
+      {
+        "case_id": "perturbed_checkerboard_a5.4_n64_s5501",
+        "below_ideal": -7.838065169352149e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.1_n16_s1103",
+        "below_ideal": -1.854916693577735e-07
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.1_n16_s2207",
+        "below_ideal": -1.854917819343882e-07
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.1_n16_s3301",
+        "below_ideal": -1.8549160540892728e-07
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.44_n16_s1103",
+        "below_ideal": -7.436828390883221e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.44_n16_s2207",
+        "below_ideal": -7.436828267648465e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.44_n16_s3301",
+        "below_ideal": -7.436828113327465e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.44_n64_s4409",
+        "below_ideal": -7.436824776885231e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.44_n64_s5501",
+        "below_ideal": -7.4368263285329306e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.46_n16_s1103",
+        "below_ideal": -1.3128502929227182e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.46_n16_s2207",
+        "below_ideal": -1.3128508664639327e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.46_n16_s3301",
+        "below_ideal": -1.3128507869719641e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.46_n64_s4409",
+        "below_ideal": -1.3128507254656085e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.46_n64_s5501",
+        "below_ideal": -1.3128477556190177e-06
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.4_n16_s1103",
+        "below_ideal": -1.1576722953154928e-05
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.4_n16_s2207",
+        "below_ideal": -1.157672294027634e-05
+      },
+      {
+        "case_id": "perturbed_rhombic_a5.4_n16_s3301",
+        "below_ideal": -1.1576722910522363e-05
+      }
+    ]
+  },
+  "extended": {
+    "scalar_minimum_above_dense_angle_grid": 0.0,
+    "cell_search_runs": 15,
+    "cell_search_proposals": 1200,
+    "max_saved_cell_energy_error": 0.0,
+    "max_best_cell_energy_excess": 0.0,
+    "cell_search_states_below_envelope": []
+  },
+  "passed": true
+}

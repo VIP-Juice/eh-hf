@@ -1,0 +1,23 @@
+{
+  "a_over_d_critical": 5.42240068000776,
+  "energy_per_hole_Ed": -1.324689537224094,
+  "delta_energy_slope": -0.0003821701278772238,
+  "ewald_convergence": [
+    {
+      "split": 3.0,
+      "accuracy": 5.0,
+      "a_over_d": 5.422400680029733
+    },
+    {
+      "split": 4.0,
+      "accuracy": 6.0,
+      "a_over_d": 5.42240068000776
+    },
+    {
+      "split": 5.0,
+      "accuracy": 7.0,
+      "a_over_d": 5.422400680018141
+    }
+  ],
+  "scope": "T=0 crossing of the two defect-free composite crystals"
+}

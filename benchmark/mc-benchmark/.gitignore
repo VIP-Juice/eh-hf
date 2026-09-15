@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+.mpl-cache/
+*.nbc
+*.nbi

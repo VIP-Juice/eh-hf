@@ -1,0 +1,47 @@
+{
+  "ideal_square_honeycomb_crossing": 5.42240068000776,
+  "square_to_rhombic": 5.061078122015051,
+  "rhombic_to_honeycomb": 5.464363360901242,
+  "rhombic_honeycomb_convergence": [
+    {
+      "split": 3.0,
+      "accuracy": 5.0,
+      "a_over_d": 5.464363361014442,
+      "energy_per_hole": -1.3213897825346195,
+      "rhombic_angle_degrees": 79.9904287045466
+    },
+    {
+      "split": 4.0,
+      "accuracy": 6.0,
+      "a_over_d": 5.464363360901242,
+      "energy_per_hole": -1.3213897825434269,
+      "rhombic_angle_degrees": 79.9904411614636
+    },
+    {
+      "split": 5.0,
+      "accuracy": 7.0,
+      "a_over_d": 5.464363360900877,
+      "energy_per_hole": -1.3213897825434568,
+      "rhombic_angle_degrees": 79.9904369409314
+    }
+  ],
+  "square_rhombic_convergence": [
+    {
+      "strain_step": 0.01,
+      "a_over_d": 5.061079599794535
+    },
+    {
+      "strain_step": 0.006,
+      "a_over_d": 5.061078301922395
+    },
+    {
+      "strain_step": 0.003,
+      "a_over_d": 5.061078115917478
+    },
+    {
+      "strain_step": 0.0015,
+      "a_over_d": 5.061078122015051
+    }
+  ],
+  "scope": "Lowest energy among square, optimized midpoint rhombic, and honeycomb; MC and variable-cell searches support these candidates, not a proof excluding all larger cells."
+}

@@ -1,0 +1,8 @@
+[deps]
+LoopVectorization = "bdcacae8-1622-11e9-2a5c-532679323890"
+Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+
+[compat]
+julia = "1.11"
+LoopVectorization = "0.12"
+Optim = "1"

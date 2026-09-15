@@ -1,0 +1,566 @@
+         Strong-coupling phases of trions and excitons in electron-hole bilayers at
+                    commensurate densities: Supplementary Material
+                                                  David D. Dai and Liang Fu
+                  Department of Physics, Massachusetts Institute of Technology, Cambridge MA 02139, USA
+                                                (Dated: January 29, 2024)
+
+
+
+                         Contents
+
+  I. Ewald Summation                                       1
+
+ II. Dilute-Limit Reduction of Trion to Point
+     Particle                                              2
+
+III. Hartree-Fock Derivation                               3
+
+IV. Main Hartree-Fock Results                              6
+
+ V. Additional Hartree-Fock Results                        7
+                                                                Figure S1: A local minima found by classical energy mini-
+     References                                            8    mization with a/d = 2 and 64 holes is shown on the left.
+                                                                Because a/d = 2 is denser than the crossover a/d = 5.42, the
+                                                                local minima is comprised predominantly of the checkerboard
+             I.     EWALD SUMMATION                             composite crystal, although there are various defects present.
+                                                                On the right, we show a classical “trion crystal” with balanced
+                                                                forces, where there is clear grouping into linear e−h−e trions.
+   We use Ewald summation to efficiently calculate the
+                                                                Although stable against certain directions, such as a uniform
+classical electrostatic energy and determine the classical      rotation of all trions, this configuration is unstable against
+phase diagram. Although the principle is the same as in         arbitrarily small symmetry-breaking perturbations.
+three dimensions, there are some additional subtleties in
+our case, which we discuss here [1]. Without Ewald sum-
+mation, the v(r) = 1/r potential converges very slowly or          Unlike the standard three-dimensional case, the
+not at all in real
+              R space, and likewise for its Fourier trans-      Fourier transform of the long-range potential does not
+form v(k) = d2 r[v(r)e−ik·r ] = 2π/k in reciprocal
+                                            √       space.      have a nice closed-form expression (Mathematica was un-
+Consider the interlayer potential v(r) = 1/ d2 + r2 . Its       able to compute the Fourier transform analytically), so
+Fourier transform v(k) = 2πe−kd /k converges for finite d,      it is easiest to approximate it numerically as the differ-
+but convergence becomes very slow for small d, rending          ence between the original potential’s Fourier transform
+direct summation in reciprocal space inefficient. To solve      and the short-range potential’s Fourier transform:
+this problem, we split the potential into a short-range
+part and a long-range part as shown below:                                    vlong (k) = v(k) − vshort (k),
+                                    √                                                     2π −kd                          (S2)
+                                        2
+                           1 − erf ( dr0+r )
+                                            2
+                                                                                        =    e    − vshort (k).
+              vshort (r) =     √              ,                                            k
+                                 d2 + r 2                       The short-range potential’s Fourier transform can be ex-
+                                √
+                                  2    2
+                                                         (S1)
+                           erf ( dr0+r )                        pressed as:
+               vlong (r) = √              ,                                                   √
+                               d2 + r 2                                                          2   2
+                                                                                     1 − erf ( dr0+r ) 2π  ikr cos θ 
+                                                                            Z ∞                        Z              
+where r0 is a cutoff parameter that we may choose, and          vshort (k) =    rdr      √                   dθ e       ,
+                                                                              0            d2 + r2       0
+r always denotes the in-plane distance. It is very im-                                       √
+                                                                                               2   2
+                                                                                    1 − erf ( dr0+r )
+                                                                             Z ∞                                
+portant
+√        that the argument of the error function involves
+  d2 + r2 instead of just r, because otherwise the long-                   =    dr     √               2πrJ0 (kr) ,
+                                                                              0          d2 + r2
+range potential would have “fine-detail” on the scale of d                                                          (S3)
+as r approaches 0, rending its Fourier transform slowly
+convergent. The short-range potential can be summed             where we have used the integral representation of the
+directly in real-space without any additional trouble by        Bessel functions of the first kind. Because the error func-
+summing over all interactions between a unit cell and its       tion suppresses the integrand for large r, the upper limit
+neighbors, where we choose the neighborhood’s size based        can be replaced with 6r0 (6 was chosen to make the error
+on the value of r0 relative to the unit cell dimensions and     from cutting off the integral negligible) and the resulting
+our desired accuracy.                                           proper integral evaluated numerically. To subtract the
+                                                                                                                           2
+
+                                                                instability that the single trion has, where one of the
+                                                                electrons approaches the hole and binds with it to form
+                                                                a dipole while the remaining electron leaves (shown in
+                                                                Fig. S2). These results are consistent with the total ab-
+                                                                sence of trion configurations in our randomly initialized
+                                                                calculations.
+
+
+                                                                II.   DILUTE-LIMIT REDUCTION OF TRION TO
+                                                                               POINT PARTICLE
+
+                                                                    We explicitly prove that in the dilute limit, where the
+                                                                trion’s spatial extent is negligible compared to the inter-
+Figure S2: Arrangement of electrons (red) and holes (blue)      trion distance, the trion Wigner crystal behaves identi-
+in the exciton (top) and trion (bottom) configurations. The
+                                                                cally to a crystal of equal-mass point particles (and more
+exciton is the unique ground state of the system with energy
+−1/d compared to the trion’s −0.937/d. Additionally, the
+                                                                generally, that any composite quantum particle such as
+trion has an imaginary frequency normal mode shown by the       a molecule is equivalent to an equal-mass point particle
+yellow arrows, making it a saddle point of the energy instead   once its internal motion is integrated out). The Hamilto-
+of a local minima.                                              nian for a composite quantum particle such as the trion
+                                                                is:
+                                                                                    N
+contribution of the uniform background charge from the                             X    1
+short-range sum, one more integral is needed:                                H=             ∇2i + V ({ri − rj }),       (S5)
+                                                                                   i=1
+                                                                                       2m i
+                 Z             
+                     2
+         Vback = d r vshort (r) ,                               where there are N constituent particles, mi is the mass
+                                        √                       of the ith constituent, ∇i is the gradient with respect
+                                        2    2 
+                             1 − erf ( dr0+r )
+                  Z ∞
+                                                                to the ith constituent, and the internal potential V only
+                         
+               =      dr 2πr    √                ,      (S4)    depends on the separations between thePparticles. For
+                  0               d2 + r2
+                                                                convenience, define the total mass M = i mi .
+                     − dr22
+                                                                   Suppose that we transform to N − 1 relative coordi-
+                                             
+                     r0 e 0                d
+               = 2π √        − d 1 − erf         ,              nates r′1,··· ,N −1 and 1 center-of-mass (COM) coordinate
+                          π               r0
+                                                                r′N using linear transformation r′i = Λij rj . The poten-
+where the integral has been evaluated analytically using        tial energy now has some arbitrary dependence on the
+a computer algebra system.                                      relative coordinates V ({r′1,··· ,N −1 }) but does not depend
+   The cutoff parameter r0 was chosen to always be one-         on the COM coordinate r′N due to translation invari-
+quarter of the smallest unit cell dimension, and both the       ance. Meanwhile, because the gradient transforms as
+real-space and reciprocal-space sums were converged to          ∇i = ∇′j Λji , the kinetic energy in the transformed co-
+around eight decimal places. For our exploratory cal-           ordinates is:
+culations, we scanned through various a/d and placed
+                                                                                   N
+128 electrons and 64 holes in a large supercell to avoid                          X    1        1        Fji Fki
+artificially imposing any symmetry on the result. For                       T =            ∇2i = ∇′j ∇′k         ,      (S6)
+                                                                                  i=1
+                                                                                      2m i      2         mi
+each value of a/d, we ran several calculations with dif-
+ferent random initializations to ensure that we discov-         where for brevity we may define diagonal matrix Bij =
+ered all possible phases. An example from one of these          δij /mi and S = FBFT to yield:
+calculations is shown in Fig. S1. Once the honeycomb
+and checkerboard composite crystals were discovered, we                                      1 ′ ′
+used the defect-free geometries to determine the struc-                               T =     ∇ ∇ Sjk .                 (S7)
+                                                                                             2 j k
+tures’ precise energies.
+   One may wonder whether a lattice of classical trions         We aim to show that the COM coordinate only appears
+may be stable. As with the single trion, we were able           in T as ∇′2  N /2M and does not mix with the relative co-
+to find force-balanced configurations that are periodic         ordinates, or in other words that SiN = δiN /M .
+arrays of trions, as shown in Fig. S1. However, even               For r′1,··· ,N −1 to be relative coordinates, they must be
+the slightest symmetry-breaking perturbation destroys           invariant under the translation ri → ri + a applied to all
+the classical trion crystal, and the system relaxes into        i. Additionally, because r′N is the COM, the last row of
+a composite crystal of electrons and dipoles, indicating        F is FN,j = mj /M . Then the sum of F’s rows satisfies:
+that the classical trion crystal is a saddle point and not                             X
+a local minima of the classical energy. Indeed, the trion                                    Fij = δiN .                (S8)
+crystal relaxes to the composite crystal through the same                                j
+                                                                                                                                             3
+
+Using this, we have:                                                        where the ϕα 1···Nα ’s are orthonormal single-particle or-
+                                                                            bitals (orthonormality is only enforced between orbitals
+                              1          1                                  belonging to the same species; there is no need for con-
+                         [BFT ]iN =
+                                FN i =     ,            (S9)
+                             mi         M                                   ditions on orbitals belonging to different species). By
+                                                                            comparing to the single-determinant ansatz, we can see
+so SiN = j Fij [BFT ]jN = j Fij /M = δi,N /M , as de-
+           P                  P
+                                                                            that our multi-determinant ansatz is indeed normalized.
+sired. Suppose that the composite particle sits in an ex-                   While it is true that such a product of Slater determi-
+ternal potential that only varies significantly at the large                nants cannot capture correlations between particles of
+length scale a, and let d be the spatial extent of the com-                 the same or different species, this ansatz is a good place
+posite particle. Then at lowest order in d/a, coupling                      to start for a first analysis, and we expect it to be ad-
+between the internal degrees of freedom and external po-                    equate for describing many strong-coupling phases that
+tential is negligible, and the composite particle behaves                   we are interested in.
+like a point particle of mass M located at its COM.
+
+
+          III.       HARTREE-FOCK DERIVATION                                  To describe the most general system of f interacting
+                                                                            species, let species α experience a single-particle Hamil-
+                                                                            tonian hα , and let particles of species α and β experience
+   To study the quantum phases of the electron-hole bi-
+                                                                            an interaction potential v αβ . The many-body Hamilto-
+layer, we introduce a mean-field approximation that gen-
+                                                                            nian is:
+eralizes the Slater determinant of Hartree-Fock theory.
+Consider a system of fermions of various species 1 . . . f ,
+where fermions of the same species are identical. For ex-
+ample, species could distinguish between different spin
+polarizations, between electrons and holes, or between
+valley degrees of freedom. A wavefunction describing this
+                                                                                   Nα                           Nβ
+                                                                                                             Nα X
+system should be antisymmetric under the exchange of                              XX                    1   XX                       β
+                                                                                             α
+two same-species fermions, but this condition does not                       H=              h   (rα
+                                                                                                   i )+                  v αβ (rα
+                                                                                                                                i − rj ). (S11)
+                                                                                                       2
+apply to the exchange of different-species fermions, as                            α   i=1                  αβ i=1 j=1
+such an exchange does not really make sense. A simple
+ansatz for this system is a product of Slater determinants,
+one for each species. Letting rα
+                               i denote the position of the
+ith fermion of species α (throughout this paper, we use
+the Greek letters starting with α and β to index species)
+and Nα denote the number of fermions of species α, we                       Technically, we should exclude i = j in the sum when
+can write this ansatz as:                                                   α = β, but this self-interaction will be exactly cancelled
+                                                                            by the exchange energy, so we need not worry about it.
+ ψ(r11 , . . . , r1N1 ; r21 , . . . , r2N2 ; . . . ; rf1 , . . . , rfNf )
+                                                                            Following the same procedure used to calculate the ex-
+              ϕα     α
+               1 (r1 )  ϕα    α          α     α
+                         2 (r1 ) · · · ϕNα (r1 )                            pected energy of a single Slater determinant, we can show
+               α α       α α             α     α
+    Y 1       ϕ1 (r2 ) ϕ2 (r2 ) · · · ϕNα (r2 )     (S10)                   that the expected energy of our ansatz is:
+  =   √          ..        ..    ..        ..     ,
+    α
+        Nα !      .         .        .      .
+             ϕα     α   α α             α     α
+              1 (rNα ) ϕ2 (rNα ) · · · ϕNα (rNα )
+
+
+
+
+                  Nα                     Nα XNβ                                                                    
+                XX                    1 XX          α β αβ α       β     α β       αβ    α β αβ α       β     β α
+       E=             ⟨ϕα
+                        i |hα α
+                             |ϕ i ⟩ +            ⟨ϕ  ϕ
+                                                    i j |v (r 1 − r2 )|ϕ  ϕ
+                                                                         i j ⟩ − δ    ⟨ϕ  ϕ
+                                                                                         i j |v (r 1 − r2 )|ϕ  ϕ
+                                                                                                              j i ⟩  .                   (S12)
+                α i=1
+                                      2  i=1 j=1        αβ
+
+
+
+
+Note that the second term is a generalization of the ex-                    use a different basis set for each species, it is simpler
+change interaction between electrons of the same spin                       to use a common plane-wave basis, which we will index
+and is only between fermions of the same species, while                     with Greek letters starting with µ and ν. Defining the
+the first term in the two-particle sector generalizes the                   coefficient matrix as |ϕα      α
+                                                                                                    i ⟩ = Cµi |µ⟩ and matrix elements
+Coulomb interaction and is between all species. To mini-                    hα          α          αβ            αβ
+                                                                             µν = ⟨µ|h |ν⟩ and vµνκλ = ⟨µν|v        |κλ⟩, we can write
+mize this energy, we express all orbitals as a linear combi-                the Hartree-Fock energy expectation value as:
+nation of basis functions. Although we could in principle
+                                                                                                                             4
+
+
+                                  X                    1 X αβ            αβ     α∗ α β∗ β
+                             E=        hα   α∗ α
+                                        µν Cµi Cνi +      (vµκνλ − δ αβ vµκλν )Cµi Cνi Cκj Cλj ,                      (S13)
+                                   α
+                                                       2
+                                                         αβ
+
+
+
+
+where Einstein summation is implied for all indices ex-          pression, the Hartree-Fock energy can be analytically
+cept the species indices α and β. Defining the one-              continued onto the space of non-orthonormal orbitals, en-
+                                        α       α∗ α
+particle reduced density matrix as Dµν      = Cµi  Cνi , we      abling unconstrained minimization to be used.
+can further simplify the energy expression into:                   Note that the matrix inverse satisfies the relation
+       X                                                     ∆S−1 = −S−1 (∆S)S−1 , and the overlap matrix can ex-
+                   1 X αβ            αβ αβ       β
+  E=        hα
+             µν +         v µκνλ − δ   v µκλν  D       α
+                                                 κλ Dµν .        pressed as S = C† C. Therefore, if we vary C† by ∆C†
+          α
+                   2                                             (we treat variables and their complex conjugates as in-
+                      αβ
+                                                    (S14)        dependent here, which we will justify later), the change
+   In what follows, we demonstrate a way of directly min-        in the density matrix is (we have suppressed the species
+imizing the Hartree-Fock energy functional using uncon-          index for brevity so everything here refers to a single
+strained minimization techniques instead of the standard         species):
+self-consistent field (SCF) method [2]. By analytically
+continuing the energy functional onto the space of non-               ∆DT = ∆(CS−1 C† ),
+orthonormal orbitals using Lowdin symmetric orthogo-
+                                                                            = C∆(S−1 )C† + CS−1 ∆C†
+nalization, no constraints need to be enforced and no                                                                 (S17)
+Lagrange multipliers are necessary. Although not com-                       = −CS−1 (∆S)S−1 C† + CS−1 ∆C† ,
+monly used, direct minimization is implemented in some                      = CS−1 ∆C† (I − CS−1 C† ).
+density functional theory codes, and it is equivalent to
+the usual way of solving the Hartree-Fock equations self-        Substituting this into (S15) yields the variation in the
+consistently [3]. We chose this approach because it is           energy:
+immune from instabilities such as charge sloshing and is
+guaranteed to converge from any starting point, which is                 X h                                          i
+                                                                   ∆E =      Tr Fα Cα Sα,−1 ∆Cα,† (I − Cα Sα,−1 Cα,† ) ,
+optimal for exploratory calculations.
+                                          α                                 α
+   If the density matrix is varied by ∆Dµν  , the energy                    X     h                                     i
+changes by an amount:                                                   =       Tr ∆Cα,† (I − Cα Sα,−1 Cα,† )Fα Cα Sα,−1 .
+           X                                                               α
+              Tr Fα (∆Dα )T ,
+                            
+   ∆E =                                                                                                               (S18)
+           α                                                     Therefore, we have the derivative of the analytically con-
+                    X  αβ                              (S15)    tinued energy with respect to C† :
+                                      
+   α                            αβ αβ   β
+  Fµν [D] = hα
+             µν +      vµκνλ − δ vµκλν Dκλ .
+                     β                                                ∂E
+                                                                       α∗
+                                                                          = [(I − Cα Sα,−1 Cα,† )Fα Cα Sα,−1 ]µν .    (S19)
+In the top expression, bold font denotes that an object              ∂Cµν
+should be treated as a matrix. Ordinarily, we would min-
+imize the energy under the orthonormality constraint us-         Using the expression for the Fock matrix Fα , the energy
+ing Lagrange multipliers. However, there is a way out            expression Eq. S14 can be rewritten to
+that allows us to convert the problem into unconstrained                               1X α     α    α
+minimization. For any arbitrary orbitals |i⟩, we can per-                         E=      (h + Fµν )Dµν ,             (S20)
+                                                                                       2 α µν
+form Lowdin symmetric orthogonalization to define the
+orthonormal orbitals |ĩ⟩ = |j⟩(S −1/2 )ji , where S −1/2 de-
+notes the matrix inverse-square-root of Sij = ⟨i|j⟩. Com-        allowing the computationally-expensive Fock matrix to
+pared to other methods of orthogonalization such as the          be reused in both energy and gradient computations.
+Gram-Schmidt process, Lowdin orthogonalization man-                 In general, if a real-valued function g depends on the
+ifestly treats all orbitals on equal footing, and it yields      complex-valued argument z, we have the following iden-
+the orthonormal orbitals “closest” to the original non-          tities:
+orthonormal orbitals in the least-squares sense [4]. Using                              ∂g          ∂g
+this procedure, the density matrix corresponding to an                                       = 2 Re[ ∗ ],
+             α
+                                                                                     ∂ Re[z]        ∂z
+arbitrary Cµi  after orthogonalization is:                                                                            (S21)
+                                                                                        ∂g          ∂g
+                 α     α∗ α                                                                  = 2 Im[ ∗ ],
+                Dµν = Cµj Cνk (S α,−1 )kj ,             (S16)                        ∂ Im[z]        ∂z
+
+where Sα,−1 is the matrix inverse of Sijα
+                                          = Cµiα∗ α
+                                                 Cµj . By        where derivatives with respect to the real (imaginary)
+first orthogonalizing before plugging into the energy ex-        part of z hold the imaginary (real) part constant, and
+                                                                                                                                                         5
+
+derivatives with respect to z ∗ treat z and z ∗ as inde-                     larger periodic box is equivalent to using a finer mesh, all
+pendent. For the purposes of updating variables during                       else being constant. As with using direct minimization,
+some optimization algorithm such as conjugate gradient,                      using a large periodic box is very helpful when explor-
+                        ∂g
+one can pretend that 2 ∂z ∗ is the derivative of g with re-                  ing a new system with unknown symmetry. Our basis
+spect to z, as this produces the same variable update as                     set is a rectangular grid of plane-waves consistentp with
+treating the real and imaginary parts of z as separate                       the periodic boundary conditions: ϕk (r) = eik·r / Lx Ly ,
+independent variables. Therefore, because we have com-                       k = (2πnx /Lx , 2πny /Ly ) for integer nx and ny . The one-
+puted both the value and derivative of the analytically                      body contribution to the Hamiltonian is just the kinetic
+continued energy, off-the-shelf minimization algorithms                      energy and is diagonal in this basis:
+such as conjugate gradient can be used to solve for the
+Hartree-Fock orbitals.                                                                                                 1 2
+                                                                                                        hα
+                                                                                                         µν = δµν        k ,                       (S22)
+  For our calculations, we use a large Lx by Ly rectan-                                                               2mα µ
+gular box with periodic boundary conditions, which is
+equivalent to placing our system on a torus. Implement-                      where kµ is the wavevector corresponding to the plane-
+ing Hartree-Fock in a large periodic box is essentially                      wave with the flattened index µ, and mα is a species-
+equivalent to enforcing a unit cell and sampling on a                        dependent effective mass. For a general interaction po-
+particular mesh in the first Brillouin zone, where using a                   tential v(r1 − r2 ), the two-body matrix element is:
+
+
+
+                                              Z          Z                                                                   
+                                      1                                               −ik′1 ·r1 −ik′2 ·r2 +ik1 ·r1 +ik2 ·r2 )
+   ⟨k′1 k′2 |v(r1 − r2 )|k1 k2 ⟩ =                   2
+                                                    d r1         2
+                                                               d r2 v(r1 − r2 )e                                               ,
+                                 (Lx Ly )2 box             box
+                                              Z                                     Z                                                                
+                                      1              2      i(−k′1 −k′2 +k1 +k2 )·r1           2                                 i(−k′2 +k2 )·(r2 −r1 )
+                               =                    d r1 e                                   d (r2 − r1 ) v(r1 − r2 )e                                   ,
+                                 (Lx Ly )2 box                                         box
+                                 δk′ +k′ ,k1 +k2
+                                                   Z                               
+                                                                           ′
+                               = 1 2                     d2 r v(r)ei(−k2 +k2 )·r ,
+                                      Lx Ly          box
+                                 δk′1 +k′2 ,k1 +k2
+                               =                   v(k′2 − k2 ),
+                                      Lx Ly
+                                                                                                                                                      (S23)
+
+
+ where all wavevectors are consistent with the periodic                      system area, so the first term in Eq. S24 is exactly can-
+ boundary conditions, we have used the periodic boundary                     celed by incorporating a neutralizing background charge
+Rconditions  to simplify the integral’s limits, and v(q) =                   for every species. The contribution to the exchange term
+   d2 r[v(r)e−ik·r ] is the Fourier transform of the interac-                is slightly more subtle. The total exchange matrix is
+tion potential. We can see that the matrix element is
+                                                                                              α     αα    α
+only nonzero between initial and final two-particle states                                   Kµν = vµκλν Dκλ ,
+of the same momentum and only depends on the mag-                                                    1 X αα        α                               (S25)
+nitude of the momentum transfer. As mentioned in the                                             =           v (q)Dν+q,µ+q ,
+                                                                                                   Lx Ly q
+section discussing Ewald
+                       √      summation, the Fourier trans-
+form of v(r) = 1/ r2 + d2 is v(q) = 2πe−qd /q, which                         where µ + q is shorthand for the plane-wave state corre-
+ handles both the intralayer and interlayer interactions.                    sponding to the wavevector kµ + q. For a finite system
+ The Fourier transform is divergent at q = 0 because our                     size, the divergent v(q = 0) is indeed problematic at
+ interactions are long-ranged, but this is not an issue be-                  face value. However, after replacing sum with integral in
+ cause the contribution of v(q = 0) to the Fock matrix                       the infinite system size limit, the measure d2 q = 2πqdq
+ is exactly cancelled by the contribution of a neutralizing                  contributes a factor of q which cancels the singularity
+ background charge. To see this, we explicitly calculate                     coming from the potential v(q) ∝ 1/q. Cutting out the
+ the contribution of v αβ (q = 0) to the Fock matrix:                        q = 0 singularity simply results in a small finite-size er-
+                X                      β
+                                     Dκκ                    α
+                                                          Dνµ                ror ∝ 1/Lx Ly in the exchange matrix. Therefore, it is
+   α
+ ∆Fµν = δµν          v αβ (q = 0)          − v αα (q = 0)       .            completely safe simply to set v(q = 0) = 0, which both
+                                     Lx Ly                Lx Ly
+                 β                                                           removes the singularity and implements the neutralizing
+                                                      (S24)                  background charge.
+The potential contributed by a uniform         background                       For our calculations, we used
+                                                                                                          √ a periodic rectangle with
+charge ρβ of species β is simply d2 r[v αβ (r)ρβ ] =
+                                        R
+                                                                             a height-to-width ratio of 3/2 to allow a triangular
+v αβ (q = 0)ρβ . The trace of the density matrix Dκκ
+                                                   β
+                                                      is ex-                 lattice to fit cleanly. We also performed randomly ini-
+actly the number of particles of species β, and Lx Ly is the                 tialized runs with differently-shaped boxes and different
+                                                                                                                                  6
+
+
+
+
+Figure S3: The total (spin ↑ plus ↓) electron density is shown       Figure S4: A local minima found by a randomly initialized
+in the left panel, and the hole density is shown in the right        RHF run at the same parameters as in the main text, with
+panel; the coloring scheme is consistent for both densities and      an energy per particle higher than the trion-initialized calcu-
+                                                               2
+is shown in the colorbar in units of 1/a2B,h for aB,h = 4πϵℏ
+                                                          e2 m h
+                                                                 .   lation by a few tenths of a percent. Both the electrons and
+The calculation parameters are me = 0.8m0 , mh = 0.4m0 ,             holes have crystallized onto an approximate triangular lattice,
+d = 4.83aB,h , hole rs = 8, nh = 36, and equal electron spin-        with some defects visible on the borders of the box.
+populations.
+
+
+numbers of particles, but the results were qualitatively             orbitals is a sensible function over the space of non-
+the same. Our basis set was a 45 by 39 grid of plane                 orthonormal orbitals and is easily differentiable, allow-
+waves consistent with the periodic boundary conditions.              ing standard unconstrained minization techniques such
+We choose
+     √      the specific numbers 45 and 39 because 39/45             as conjugate gradients to be used.
+and 3/2 differ only by 0.07%, so the resolution in each
+direction is essentially the same. We wrote all of our code             Although formally equivalent to the self-consistent
+in Python and minimized the Hartree-Fock energy using                field method, direct minization is immune from instabili-
+SciPy’s conjugate gradient with default settings (halt op-           ties such as charge sloshing and is guaranteed to converge
+timization when maximum component of gradient is less                from any starting point. Both of these features are conve-
+than 10−5 ). All calculations were done with 72 electrons            nient for exploratory calculations with unknown ground
+and 36 holes.                                                        states. We supply a detailed derivation of our working
+                                                                     equations and additional HF calculations in the supple-
+                                                                     mentary materials.
+      IV.    MAIN HARTREE-FOCK RESULTS
+                                                                        The aforementioned parameters for WSe2 /MoSe2 yield
+                                                                     a Bohr radius for the hole layer of aB,h = 0.622 nm
+   Hartree-Fock Calculations— Guided by our theoreti-                and d/aB,h = 4.83. We present results for trion den-
+cal results in the low-density regime, we perform fur-               sity nt = nh = 1.29 · 1012 cm−2 , which corresponds to
+ther numerical study to strengthen our prediction of                 a trion density parameter rs,trion = 40 and hole density
+trion Wigner crystals by applying the Hartree-Fock (HF)              parameter rs,hole = 8.
+method to Ne = 72 electrons and Nh = 36 holes in a
+periodic rectangle. Our system consists of four fermion                 We find that in the RHF ground state, the electrons
+species including spin s ∈ {↑, ↓} and electron/hole de-              and holes are concentrated on top of each other in a tri-
+grees of freedom, and our ansatz for the HF ground state             angular lattice. The energy per particle is −0.07652, the
+is a product over fermion species of Slater determinants.            electron HF spectrum has gap 0.02852, and the hole HF
+Because the ground state in the dilute limit must be a               spectrum has gap 0.08760 (all energies are in terms of the
+crystal of spin-singlet trions, we perform restricted HF             hole Hartree energy). This shows that the ground state
+by forcing the electron s =↑ and s =↓ orbitals to be the             is an insulating quantum crystal of spin-singlet trions for
+same (no other conditions are enforced). As discussed                these parameters.
+previously, the coupling between hole spins is weak and
+plays an unimportant role, so we assume that the holes                  While HF provides a qualitative description of the
+are fully spin-polarized, reducing the effective number of           trion crystal, it cannot capture pairing between electrons
+species to three.                                                    and holes in the excitonic supersolid. It is important
+   Instead of the usual self-consistent field method,                to combine an HF study with more advanced numerical
+we directly minimize an analytic continuation of the                 methods such as quantum Monte Carlo in order to ac-
+Hartree-Fock energy functional onto the space of non-                curately determine the parameter regions for interaction-
+orthonormal orbitals [2]. For any set of non-orthonormal             induced phases, including the trion crystal, the composite
+orbitals |i⟩, Lowdin symmetric orthogonalization yields              crystals, and the putative excitonic supersolid. We leave
+the orthonormal orbitals |ĩ⟩ = |j⟩(S −1/2 )ji , where S−1           a comprehensive numerical study of the electron-hole bi-
+is the matrix inverse-square-root of the overlap matrix              layer at commensurate 2 : 1 density ratio to a future
+Sij = ⟨i|j⟩. The HF energy of the Lowdin-orthogonalized              work.
+                                                                                                                             7
+
+
+
+
+Figure S5: A local minima found by a randomly initialized
+HF run with electrons fully spin-polarized at hole density pa-
+rameter rs,h = 16 and all other parameters the same as in
+the main text. There is clear grouping into “dumbells” of two    Figure S6: A local minima found by a randomly initialized
+electrons and one hole, which are localized onto an approxi-     UHF run at me = 0.25m0 , mh = m0 , interlayer spacing
+mate triangular lattice.                                         d = 0.5aB,h , and hole density parameter rs = 7. The left
+                                                                 panel shows the total electron density and the right panel
+                                                                 shows the density parameter (the difference between the two
+                                                                 electron spins is visually imperceptible). The triangular lat-
+ V.   ADDITIONAL HARTREE-FOCK RESULTS
+                                                                 tice is nearly perfect with some defects visible on the right
+                                                                 edge of the box .
+   The physically realistic parameters for the TMD
+bilayer WSe2 /MoSe2 are electron effective mass
+me (MoSe2 ) = 0.8m0 (m0 is the bare mass), hole                  true trion is spherically symmetric and has total angu-
+effective mass mh (WSe2 ) = 0.4m0 , dielectric constant          lar momentum L = 0. Within an orbital-filling picture,
+ϵ = 4.7ϵ0 , and interlayer spacing d = 3 nm [5–8]. Then          this can be captured by placing all particles in colo-
+the Bohr radius for the hole layer is aB = 0.622 nm and          cated s-orbitals. This adequately treats the kinetic en-
+d/aB,h = 4.83. In the main text, we present calculations         ergy and attraction between electrons and holes, but it
+at a trion density ntrion = nh = 1.29 · 1012 cm−2 , which        does not satisfy the electron-electron repulsion. Mean-
+corresponds to a trion density parameter rs,trion = 40           while, an orbital-filling picture in UHF can also satisfy
+and hole density parameter rs,hole = 8.                          the electron-hole attraction and electron-electron repul-
+   We find that with random initialization, RHF con-             sion by localizing the electrons on opposite sides of the
+verges onto a state where electrons and holes are concen-        hole, but this does a poor job of minimizing the kinetic
+trated on top of each other in an approximate triangular         energy (by including admixture with a p-orbital to lo-
+lattice, corresponding to a Wigner crystal of singlet trions     calize on one side of the hole) and does not respect the
+with some defects. Due to their repulsion, the electron          trion’s rotational symmetry. Once the electrons are spa-
+orbitals spread out more than the hole orbitals. Moti-           tially separated on opposite sides of the central hole, ex-
+vated by these randomly initialized calculations, we also        change coupling makes the spin-polarized case more fa-
+perform RHF starting directly from singlet trions placed         vorable than the spin-unpolarized case.
+on a triangular lattice. This yields a lower energy than            For most mass ratios, this spin-polarized “dumbell
+any randomly initialized calculation, indicating that the        trion” with broken rotational symmetry is energetically
+true ground state is a triangular lattice of singlet trions.     favorable in UHF, despite it’s being qualitatively incor-
+   We also perform unrestricted Hartree-Fock (UHF) cal-          rect. Thus, the three-body problem is not captured well
+culations where the electron s =↑ and s =↓ orbitals are          by Hartree-Fock because it cannot minimize the energy
+not restricted to be the same, as well as spin-polarized HF      while maintaining correct symmetry. By restricting the
+calculations. We note that both unrestricted HF and HF           electron s =↑ and s =↓ orbitals to be same, we can force
+calculations for spin-polarized electrons actually produce       Hartree-Fock to yield qualitatively correct results, at the
+lower energies than RHF for the aforementioned param-            cost of having to put in a constraint by hand.
+eters and in the dilute limit as well. However, this result         Although it is difficult to see this at the main text’s
+is likely an artifact of the Hartree-Fock approximation          parameters, at decreased density the spin-polarized HF
+because the dilute ground state should be a triangular           calculations still find a crystal of trions, except that the
+lattice of spin-singlet trions. For the three-body problem       trions are the spin-polarized type, which are shaped like
+of two electrons and one hole, HF significantly underes-         a dumbell. Thus, even the spin-polarized HF calcula-
+timates the trion binding energy or cannot even capture          tions still confirm our general prediction of trion Wigner
+trion formation. We also note that while the HF ansatz           crystals.
+can capture the fully classical crystals composed of elec-          We also note that in the many-body problem, enforcing
+trons and holes, it cannot capture pairing between elec-         a net charge density increases the trion’s effective region
+trons and holes and thus cannot describe the excitonic           of stability relative to the electron and exciton. For an
+supersolid. Meanwhile, in the singlet trion crystal, there       infinitely large system with d larger than the critical dc
+are strong correlations inside the trions that HF cannot         at which the trion unbinds, the exciton plus electron is
+describe.                                                        indeed lower in energy than the now metastable trion.
+   To describe the trion, the effects of both kinetic en-        However, provided that d − dc is not too large, the elec-
+ergy and interaction must be taken into account. The             tron and exciton must be extremely far away from each
+                                                                                                                            8
+
+other to actually “break-even” with the trion. Enforcing a    state where spin-up electrons, spin-down electrons, and
+net charge density effectively confines groups of two elec-   holes are all concentrated on top of each other in an ap-
+trons and one hole into potential wells, which prevents       proximate triangular lattice. Additionally, the difference
+the electron and exciton from separating to break-even        between the electron s =↑ and s =↓ densities is visu-
+distance and “squeezes” them back into a trion.               ally imperceptible, indicating a nearly pure electron spin-
+   Additionally, we were able to find parameters for which    singlet. UHF calculations starting directly from singlet
+unrestricted Hartree-Fock converges naturally to a spin-      trions placed on a triangular lattice yielded slightly lower
+singlet: me = 0.25m0 , mh = m0 , interlayer spacing           energies and produced gapped electron and hole spec-
+d = 0.5aB,h , and hole density parameter rs = 7. The          tra, indicating that the true UHF ground state at these
+very small electron effective mass is chosen here to impose   parameters is an insulating triangular lattice of singlet
+a high cost for breaking rotation symmetry. Randomly          trions.
+initialized UHF calculations converge naturally onto a
+
+
+
+
+[1] R. E. Johnson and S. Ranganathan, Physical Review E 63        and E. Tutuc, Physical Review B 97 (2018).
+    (2001).                                                   [6] P.-C. Yeh, W. Jin, N. Zaki, D. Zhang, J. T. Liou, J. T. Sad-
+[2] T. A. Arias, M. C. Payne, and J. D. Joannopoulos, Phys-       owski, A. Al-Mahboob, J. I. Dadap, I. P. Herman, P. Sut-
+    ical Review Letters 69, 1077–1080 (1992).                     ter, et al., Physical Review B 91 (2015).
+[3] R. Sundararaman, K. Letchworth-Weaver, K. A. Schwarz,     [7] B. Fallahazad, H. C. Movva, K. Kim, S. Larentis,
+    D. Gunceler, Y. Ozhabes, and T. Arias, SoftwareX 6,           T. Taniguchi, K. Watanabe, S. K. Banerjee, and E. Tutuc,
+    278–284 (2017).                                               Physical Review Letters 116 (2016).
+[4] I. Mayer, International Journal of Quantum Chemistry      [8] A. Laturia, M. L. Van de Put, and W. G. Vandenberghe,
+    90, 63–65 (2002).                                             npj 2D Materials and Applications 2 (2018).
+[5] S. Larentis, H. C. Movva, B. Fallahazad, K. Kim,
+    A. Behroozi, T. Taniguchi, K. Watanabe, S. K. Banerjee,
+

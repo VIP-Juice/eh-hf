@@ -1,0 +1,392 @@
+                               PHYSICAL REVIEW LETTERS 132, 196202 (2024)
+  Editors' Suggestion       Featured in Physics
+
+
+
+
+                               Strong-Coupling Phases of Trions and Excitons
+                            in Electron-Hole Bilayers at Commensurate Densities
+                                                  David D. Dai     and Liang Fu
+              Department of Physics, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA
+                            (Received 26 October 2023; accepted 28 March 2024; published 8 May 2024)
+
+                 We introduce density imbalanced electron-hole bilayers at a commensurate 2∶1 density ratio as a
+              platform for realizing novel phases of electrons, excitons, and trions. Through the independently tunable
+              carrier densities and interlayer spacing, competition between kinetic energy, intralayer repulsion, and
+              interlayer attraction yields a rich phase diagram. By a combination of theoretical analysis and numerical
+              calculation, we find a variety of strong-coupling phases in different parameter regions, including quantum
+              crystals of electrons, excitons, and trions. We also propose an “electron-exciton supersolid” phase that
+              features electron crystallization and exciton superfluidity simultaneously. The material realization and
+              experimental signature of these phases are discussed in the context of semiconductor transition metal
+              dichalcogenide bilayers.
+
+              DOI: 10.1103/PhysRevLett.132.196202
+
+
+
+   Introduction.—Recently, semiconductor transition metal            bilayers have attracted increasing interest owing to the
+dichalcogenide (TMD) heterostructures have emerged as an             interaction between charge carriers and dipolar exci-
+ideal platform for exploring quantum phases of matter. An            tons [42].
+extraordinarily rich variety of quantum states have been                In this Letter, we study the strong-coupling phases of an
+predicted and observed, including Mott-Hubbard and                   imbalanced electron-hole bilayer at commensurate electron
+charge-transfer insulators [1–6], Wigner crystals [3,7–              and hole densities ne =nh ¼ 2, motivated by the following
+14], itinerant ferromagnets [15–20], interfacial ferroelec-          considerations. Because there is a net charge density
+trics [21], heavy Fermi liquids [22–24], and spin-polaron            n ¼ ne − nh ≠ 0, the Coulomb interaction between
+liquids [16,25,26], as well as quantum spin Hall states              charged particles dominates in the low-density regime,
+[27,28] and quantum anomalous Hall states [29–38].                   favoring strong-coupling phases with crystalline order. This
+Remarkably, all these electronic phases realized in a single         should be contrasted to the balanced electron-hole bilayer,
+material system are rooted in one common ground—the                  where charge-neutral excitons condense into a superfluid at
+two-dimensional electron (or hole) gas in monolayer                  low densities because their mutual dipole-dipole interaction
+TMDs. Here, the large effective mass and reduced screen-             is parametrically weaker than the quantum kinetic energy.
+ing favors strong interactions, and moiré bands in TMD              The particular choice of ne =nh ¼ 2 is also motivated by the
+heterostructures further enrich the physics, leading to much         prospect of three-body bound states known as trions, which
+of the observed phenomena.                                           are charge-e composite particles made of two electrons in
+   In addition to moiré physics, TMD heterostructures               the same layer bound to a hole in the other layer [43,44].
+provide a material realization of electron-hole (e-h)                   Through both theoretical analysis and numerical calcu-
+bilayers featuring electrons and holes on spatially separated        lation, we find a number of ordered phases driven by strong
+layers, whose densities can be independently tuned by top            interactions. These include bilayer electron-hole Wigner
+and bottom gate voltages [39]. The coexistence of pos-               crystals, “composite crystals” of coexisting electrons and
+itively and negatively charged particles supports both               excitons, as well as exotic quantum phases without classical
+repulsion between like charges and attraction between                counterparts. In particular, we find a quantum supersolid
+opposite charges, enabling new phases of matter. When                made of electrons and excitons as well as a quantum crystal of
+the densities of electrons and holes are equal, interlayer           trions in the low-density regime. Experimental signatures of
+excitons with intrinsic out-of-plane dipole moments form,            these predicted phases in TMD bilayers are also discussed
+which may support high-temperature exciton superfluidity             in the context of optical spectroscopy and transport
+in an electrical insulator. Recently, thermodynamic evi-             measurements.
+dence of excitonic insulator ground states has been                     Before presenting our main results, we first consider the
+observed in TMD bilayer WSe2 =MoSe2 with WSe2 as                     three-body problem of two electrons and one hole, which
+the hole layer and MoSe2 as the electron layer separated by          reside on spatially separated layers (z ¼ d and 0) and
+insulating h-BN layers that suppress recombination                   mutually interact through Coulomb forces. Classically, the
+[40,41]. Moreover, density imbalanced electron-hole                  minimum energy configuration is an electron and a dipole
+
+0031-9007=24=132(19)=196202(6)                               196202-1                         © 2024 American Physical Society
+                                       PHYSICAL REVIEW LETTERS 132, 196202 (2024)
+
+that are far apart due to their residual repulsion. This dipole          spin. We have already divided all quantities by their
+(equivalent to a classical exciton) consists of an electron and a        appropriate atomic units, i.e., lengths by the Bohr radius
+hole sitting directly on top of each other, separated only by            aB ¼ ð4πϵℏ2 =me2 Þ (we use this definition throughout) and
+the layer distance d. For comparison, consider a “trion”                 energies by the Hartree energy Eh ¼ ðℏ2 =ma2B Þ. Unless
+charge cluster with the two        electrons at ðr; dÞ and the hole
+                              pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ                           stated otherwise, we assume for simplicity that the electron
+at ð0; 0Þ. When r ¼ 1= 24=3 − 1 ≈ 0.811d, the net force                  and hole masses are equal, noting that our main findings are
+acting on each particle is zero. However, this force-balanced            qualitatively correct for a range of mass ratios.
+configuration has energy −0.937=d, which is higher than the                 Classical regime.—We first consider the classical limit
+energy −1=d of a dipole plus an electron far away.                       defined by taking aB → 0 while keeping d and a fixed, or
+Additionally, this classical trion has an unstable normal                equivalently, a=aB → ∞ and d=aB → ∞ for a fixed d=a. In
+mode, where the hole moves toward one of the electrons                   the classical limit, the phase diagram is characterized solely
+along the r direction, making the classical trion a saddle point         by the dimensionless ratio d=a. Both limits d=a ≫ 1 and
+of the energy instead of a local minima.                                 d=a ≪ 1 can be understood analytically. When d=a ≫ 1,
+   Our above analysis of the classical three-body problem                the interlayer coupling is negligible and a triangular lattice
+demonstrates that quantum mechanics is crucial for the                   Wigner crystal is formed independently in each layer. In the
+formation of a trion bound state. As shown by numerical                  opposite regime d=a ≪ 1, every hole pairs with an electron
+studies, the trion is the ground state of two electrons and              at the shortest possible distance d to form a small out-of-
+one hole in the bilayer when aB =d > 0.065 assuming equal                plane dipole, leaving an equal number of excess      electrons.
+                                                                                                                            pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+electron and hole masses [45], where aB ¼ ð4πϵℏ2 =e2 mÞ is               These dipoles have a weak repulsion 1=r − 1= r2 þ d2 ∝
+the Bohr radius (which vanishes in the classical limit ℏ → 0             d2 =r3 with the electrons, while electrons interact with each
+or m → ∞). We can understand the trion’s quantum origin                  other through a strong Coulomb repulsion 1=r. Therefore,
+heuristically. Start with the electron and the dipolar exciton           the electrons arrange themselves essentially independently
+separated by a large   distance r ≫ d, where they experience
+                   pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+                                                                         of the dipoles to form a triangular lattice Wigner crystal.
+a static 1=r − 1= r2 þ d2 ∝ d2 =r3 repulsion. On the other               Once the electrons crystallize, the dipoles crystallize in half
+hand, the electron’s in-plane electric field ∝ 1=r2 polarizes            of the voids between the electrons to minimize the residual
+the exciton and lowers its energy through the second-order               repulsion. The result is a composite crystal of electrons and
+Stark effect by an amount δEs ∝ −a3B =r4 to zeroth order in              dipoles, where electrons occupy one sublattice of a honey-
+d. This quantum attraction dominates the classical electron-             comb and dipoles occupy the other.
+exciton repulsion over a range of distances below a cross-                  To determine the classical ground state as a function of
+                                                                         the charge density, we minimized the classical electrostatic
+over length rc ∼ a3B =d2 , supporting a trion bound state for
+                                                                         energy. To handle the Coulomb interaction’s long-ranged
+sufficiently small d.
+                                                                         tail, we used Ewald summation (see Supplemental Material
+   At finite charge density, an additional length p            scale
+                                                                 ﬃﬃﬃﬃﬃ   [46]). For the experimentally relevant parameter range
+appears: the average interparticle distance a ≡ 1= πn,
+                                                                         a=d > 1, we find two distinct composite crystals. For
+with n ¼ nh for ne =nh ¼ 2. With three length scales—
+                                                                         the low-density limit a=d > 5.42, the numerical results
+the interparticle distance a, the layer distance d, and Bohr
+                                                                         confirm our expectation of a honeycomb composite crystal.
+radius aB , competition between intralayer repulsion, inter-
+                                                                         Interestingly, for a=d < 5.42 we find a “checkerboard”
+layer electron-hole attraction, and quantum kinetic energy
+                                                                         composite crystal consisting of two interpenetrating square
+yields a rich phase diagram for the electron-hole bilayer,
+                                                                         lattices of electrons and dipoles. This is likely due to the
+which we explore below by a combination of analytical and
+                                                                         increased electron-dipole repulsion at smaller a=d. We did
+numerical methods.
+                                                                         not observe the formation of classical trions for any a=d,
+   The Hamiltonian for the bilayer assuming equal electron
+                                                                         which is consistent with their instability. Once these two
+and hole effective masses m and 1=r Coulomb interactions is
+                                                                         composite crystals were identified, we directly calculated
+             X XZ                   2                                their electrostatic energy as a function of a=d and deter-
+                              2         −∇
+      H¼               d r ψ s ðrÞ
+                               a†
+                                                ψ s ðrÞ
+                                                   a                     mined the phase transition point, which is shown in Fig. 1.
+         a¼e;h s¼↑;↓
+                                          2                                 We now analyze the effect of quantum fluctuations
+             Z       Z       X a                                       around the classical composite crystals. At sufficiently
+           1      2      2 0        n ðrÞna ðr0 Þ
+         þ       dr dr                                                   small aB , the leading quantum effect is the zero-point
+           2                  a¼e;h
+                                        jr − r0 j                        motion of charges in the classical ground state. The root-
+           Z       Z        e                                          mean-square displacement of charges increases with aB ,
+                2      2 0    n ðrÞnh ðr0 Þ
+         − d r d r pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ ;                  ð1Þ    and when it becomes comparable to the lattice constant a,
+                               jr − r0 j2 þ d2                           quantum melting of the crystal occurs (Lindemann cri-
+                                                                         terion) [55]. Since our composite crystals have three
+where ψ e;h ðrÞ denotes the electron or hole operator, na ðrÞ ¼          charges per unit cell, there are a total of six phonon modes,
+P a†
+  s ψ s ðrÞψ s ðrÞ is the density operator, and s denotes the
+              a
+                                                                         including both acoustic and optical branches. Notably, the
+
+                                                                  196202-2
+                                          PHYSICAL REVIEW LETTERS 132, 196202 (2024)
+
+
+
+
+                                                                               FIG. 2. Soft and hard optical phonon frequencies at the center
+FIG. 1. The classical phase diagram of the electron-hole bilayer               of the Brillouin zone as function of a=d for the classical
+at ne =nh ¼ 2 for a=d > 1. The top depicts the checkerboard                    composite crystals. The low-frequency branches correspond to
+composite crystal (left) and the honeycomb composite crystal                   the displacement of the dipole’s center of mass relative to the
+(right). The bottom shows the energy and energy difference of the              electron, while the high-frequency branches are associated with
+two composite crystals, with a dashed line indicating the phase                oscillations in the dipole’s internal structure.
+transition.
+
+                                                                               for the canonical Wigner crystal. This naturally raises the
+optical phonons are associated with the relative vibration of
+                                                                               question of what the ground state is at intermediate aB
+charges within the unit cell, which is absent in the canonical
+                                                                               between d2 =a and a, where both quantum effects and
+electron Wigner crystal.
+                                                                               electrostatic interactions play crucial roles.
+    When the layer distance d is small compared to the
+                                                                                  Dilute quantum regime.—Of particular interest is the
+interparticle distance a, the electron-dipole repulsion in the
+                                                                               low-density limit defined by a → ∞ while keeping d and
+composite crystal is much weaker than the electron-
+                                                                               aB fixed, especially if d and aB are of the same order. With
+electron repulsion. Then we expect that the dipole’s center
+of mass has the largest zero-point displacement, denoted as                    a → ∞, aB necessarily lies between d2 =a and a, forcing
+ξd . This is indeed confirmed by our direct calculation of the                 partial melting of the composite crystal due to the zero-
+optical phonon frequencies at zero wave vector, which is                       point motion of the excitons’ center of mass.
+shown in Fig. 2. Two types of optical phonons are present:                        The ground state in this low-density limit depends
+the low-frequency one corresponds to the displacement of                       crucially on the ratio of the Bohr radius aB and layer
+the dipole’s center of mass relative to the electron, while the                distance d. For d < dc ≈ 15.38aB (assuming equal electron
+high-frequency one is associated with the internal structure                   and hole masses), it is known from quantum Monte Carlo
+of the dipole. At small d=a, the low-frequency                 optical         calculations that the lowest-energy state of two electrons
+                               pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ   and one hole is a trion bound state with the two electrons in
+phonon softens with ωd ∝ ∂2r VðrÞjr¼a =m ∝ d2 =ma5
+                                                                               a spin-singlet [45]. The spin-triplet trion is absent for me ¼
+[where VðrÞ ∝ d2 =r3 is the electron-dipole potential],                        mh and has a smaller binding energy when it is present for
+hence the zero-point displacement increases and is given by                    large mass ratio me =mh [45,56]. The trion’s binding energy
+                         sﬃﬃﬃﬃﬃﬃﬃﬃﬃ                                          is on the order of Eh at d ¼ 0 and decreases as d approaches
+                             ℏ         aaB 1=4                                 the critical dc at which the trion unbinds. At a given d < dc
+                    ξd ∼            ∝a         :                       ð2Þ
+                          mωd           d2                                     and in the dilute limit a → ∞, the hierarchy of energy
+                                                                               scales is necessarily as follows: Etrion ≫ ECoulomb ∼ 1=a ≫
+In the classical limit aB =a → 0, aB =d → 0 with a=d fixed,                    Ekinetic ∼ 1=a2 .
+ξd ≪ a ensures the stability of the classical composite                           The physically realistic parameters for the TMD bilayer
+crystal against quantum fluctuation.                                           WSe2 =MoSe2 are electron effective mass me ðMoSe2 Þ ¼
+   For small d=a, Eq. (2) implies that quantum melting of                      0.8m0 (m0 is the bare mass), hole effective mass
+the dipole (= interlayer exciton) sublattice in the composite                  mh ðWSe2 Þ ¼ 0.4m0 , dielectric constant ϵ ¼ 4.7ϵ0 , and
+crystal occurs first when aB reaches the order of d2 =a.                       interlayer spacing d ¼ 3 nm [47–50]. With these numbers,
+Meanwhile, the stronger electron-electron repulsion ren-                       the trion binding energy obtained from quantum
+ders the electron lattice stable against quantum fluctuations                  Monte Carlo studies [45] is on the order of 15 K.
+until aB reaches the order of the interparticle distance a, as                 Results from our Hartree-Fock calculations, which are
+
+                                                                        196202-3
+                                    PHYSICAL REVIEW LETTERS 132, 196202 (2024)
+
+
+
+
+FIG. 3. The electron (hole) density is shown in the left (right)
+panel. The coloring scheme is consistent for both densities
+and is indicated by the color bar in units of 1=a2B;h for aB;h ¼
+ð4πϵℏ2 =e2 mh Þ. The calculation parameters are me ¼ 0.8m0 ,
+mh ¼ 0.4m0 , d ¼ 4.83aB;h , hole rs ¼ 8, nh ¼ 36, and equal
+electron spin populations.
+                                                                   FIG. 4. Schematic phase diagram for the electron-hole bilayer
+shown in Fig. 3, confirm that the ground state with these          at commensurate densities ne =nh ¼ 2, with analytically known
+parameters and a realistic trion density of nt ¼ nh ¼              boundaries marked in red and limiting phases labeled.
+1.29 × 1012 cm−2 (which corresponds to a trion density
+parameter rs;trion ¼ 40 and hole density parameter
+rs;hole ¼ 8) is an insulating quantum crystal (see                 electrons intact. This sharp contrast between the spin
+Supplemental Material [46]).                                       response of electron and hole layers is an indication of
+   We note that, although the Hartree-Fock method quali-           spin-singlet trion formation. As the density increases, the
+tatively captures many phases, including the trion Wigner          trion Wigner crystal could melt into a trion Fermi liquid
+crystal, it is generally biased toward symmetry-breaking           before the trions dissociate. Such a metallic phase could be
+phases and may not produce accurate phase boundaries. For          differentiated from the insulating trion Wigner crystal using
+our 2∶1 bilayer, it is important to combine Hartree-Fock           transport measurements.
+calculations with more advanced numerical methods to                  Finally, we discuss the regime d > dc . Here, the trion is
+accurately determine the complete phase diagram. We have           unstable at the three-particle level and unbinds into an
+recently applied variational neural network wave functions to      electron and exciton. However, as shown earlier, the
+the balanced electron-hole bilayer and are planning a              exciton sublattice in the composite crystal is necessarily
+comprehensive study of the 2∶1 bilayer with this technique         unstable against quantum melting in the low-density limit.
+in the future [57].                                                Consequently, we propose that, for d > dc and sufficiently
+   Notably, trions can crystallize at significantly higher         low densities, the ground state is an exciton superfluid
+densities than electrons or holes. Because of the trion’s          permeating through an electron crystal. This state is
+large binding energy ∼15 K and small spatial extent ∼d, in         remarkable as it simultaneously exhibits crystallization
+the trion Wigner crystal phase each trion behaves as a             and superfluidity. For this reason, we call it an electron-
+charge-e fermion similar to an electron in an electron             exciton supersolid, a quantum electron solid in which
+Wigner crystal. However, because the trion mass can be             interstitial excitons Bose condense. Experimentally, this
+several times the electron mass, the trion’s Bohr radius is        phase could be detected by Coulomb drag measurements.
+several times smaller, so the same critical density parameter      We also note that supersolid phases of excitons have been
+rs ¼ 30–40 corresponds to a much higher electron-hole              studied in density-balanced electron-hole bilayers [60–63].
+density. For example, the 2e − 1h trion in WSe2 =MoSe2                We emphasize that our predicted phases are robust
+has total mass 2m0 , allowing density parameter rs ¼ 40 to         against perturbations to the model Hamiltonian in
+be reached at hole density 1.29 × 1012 cm−2. At these high         Eq. (1). For example, deviations from the 1=r potential
+densities, the effect of disorder and finite temperature is less   at short distances are expected, which modifies the exciton
+severe, because all energy scales are larger. We also note         and trion binding energies [64]. This shifts the phase
+that the possibility of trion crystallization in Van der Waals     boundaries (for example, between the electron-exciton
+heterostructures has been considered recently [58,59].             supersolid and trion crystal), but does not change the
+   Another distinctive feature of our trion Wigner crystal is      many-body phases that we established in the dilute limit.
+that the electron layer has zero total spin and a large spin       We also note that coupling to phonons may lead to polaron
+gap on the order of Eh due to the trion binding energy,            formation [65], which would enhance the already high
+whereas the spins of localized holes interact with each other      effective mass and make our phases even more robust.
+through a weak exchange interaction that vanishes in the              Conclusion.—Our Letter introduces the electron-hole
+low-density limit. Therefore, a small magnetic field can           bilayer at commensurate 2∶1 density ratio as a platform
+fully polarize the holes while leaving the spin-singlet            for realizing novel strong-coupling phases. We identify two
+
+                                                             196202-4
+                                  PHYSICAL REVIEW LETTERS 132, 196202 (2024)
+
+dimensionless ratios that govern the phase diagram: the          supported by the Simons Investigator Award from the
+ratio of the average interparticle spacing to the Bohr radius    Simons Foundation. D. D. D. was supported by the
+a=aB and the ratio of the interlayer spacing to the Bohr         Undergraduate Research Opportunities Program at MIT.
+radius d=aB . By a combination of theoretical analysis and       The authors acknowledge the MIT SuperCloud and Lincoln
+numerical calculation, we find a number of ordered phases,       Laboratory Supercomputing Center for providing high
+shown schematically in Fig. 4. In the classical regime           performance computing.
+a=aB ≫ 1, d=aB ≫ 1, we identify three crystalline phases:
+decoupled crystals in each layer for small a=d, a checker-
+board composite crystal composed of electrons and bound
+electron-hole dipoles for intermediate a=d, and a honey-          [1] F. Wu, T. Lovorn, E. Tutuc, and A. MacDonald, Phys. Rev.
+comb composite crystal for large a=d. Focusing on the                 Lett. 121, 026402 (2018).
+dilute regime a ≫ d; aB , as d is decreased, we propose that      [2] Y. Zhang, N. F. Yuan, and L. Fu, Phys. Rev. B 102, 201115
+large zero-point fluctuations of the excitons partially melt          (R) (2020).
+the composite crystal into an electron-exciton supersolid,        [3] E. C. Regan, D. Wang, C. Jin, M. I. Bakti Utama, B. Gao, X.
+where the unbound electrons remain crystalline, but the               Wei, S. Zhao, W. Zhao, Z. Zhang, K. Yumigeta et al., Nature
+excitons condense into a superfluid. As d is decreased                (London) 579, 359 (2020).
+further to the order of the Bohr radius aB , we show that the     [4] Y. Tang, L. Li, T. Li, Y. Xu, S. Liu, K. Barmak, K.
+second-order Stark effect mediates an effective attractive            Watanabe, T. Taniguchi, A. H. MacDonald, J. Shan et al.,
+force between electrons and excitons. For sufficiently small          Nature (London) 579, 353 (2020).
+                                                                  [5] T. Li, S. Jiang, L. Li, Y. Zhang, K. Kang, J. Zhu, K.
+d, this attraction binds excitons to electrons to form spin-
+                                                                      Watanabe, T. Taniguchi, D. Chowdhury, L. Fu et al., Nature
+singlet trions, which then subsequently crystallize into a
+                                                                      (London) 597, 350 (2021).
+trion crystal. Finally, we suggest that a combination of          [6] H. Park, J. Zhu, X. Wang, Y. Wang, W. Holtzmann, T.
+optical spectroscopy, transport, and Coulomb drag mea-                Taniguchi, K. Watanabe, J. Yan, L. Fu, T. Cao et al., Nat.
+surements may be used to experimentally observe our                   Phys. 19, 1286 (2023).
+proposed phases.                                                  [7] Y. Xu, S. Liu, D. A. Rhodes, K. Watanabe, T. Taniguchi, J.
+   Notably, the trion crystal is stable throughout the low            Hone, V. Elser, K. F. Mak, and J. Shan, Nature (London)
+charge density regime with a lattice constant varying                 587, 214 (2020).
+continuously with the charge density n ¼ ne − nh, pro-            [8] Y. Zhou, J. Sung, E. Brutschea, I. Esterlis, Y. Wang, G.
+vided that the electron-to-hole density ratio is maintained at        Scuri, R. J. Gelly, H. Heo, T. Taniguchi, K. Watanabe et al.,
+the commensurate value ne =nh ¼ 2. Thus, the trion crystal            Nature (London) 595, 48 (2021).
+is charge compressible with ð∂n=∂μÞ ≠ 0, with μ the charge        [9] C. Jin, Z. Tao, T. Li, Y. Xu, Y. Tang, J. Zhu, S. Liu, K.
+chemical potential, but has an energy gap to adding                   Watanabe, T. Taniguchi, J. C. Hone et al., Nat. Mater. 20,
+                                                                      940 (2021).
+excitons, i.e., exciton incompressible. This should be
+                                                                 [10] H. Li, S. Li, E. C. Regan, D. Wang, W. Zhao, S. Kahn, K.
+contrasted with the excitonic insulator at charge neutrality
+                                                                      Yumigeta, M. Blei, T. Taniguchi, K. Watanabe et al., Nature
+n ¼ 0, which is charge incompressible and exciton com-                (London) 597, 650 (2021).
+pressible. Remarkably, recent capacitance and optical            [11] X. Huang, T. Wang, S. Miao, C. Wang, Z. Li, Z. Lian, T.
+experiments on WSe2 =MoSe2 have shown that the charge                 Taniguchi, K. Watanabe, S. Okamoto, D. Xiao et al., Nat.
+and exciton compressibility can be measured independently             Phys. 17, 715 (2021).
+by varying the top and bottom gate voltages concurrently         [12] Y. Xu, K. Kang, K. Watanabe, T. Taniguchi, K. F. Mak, and
+with ΔV B ¼ ΔV T . Moreover, the formation of trion is               J. Shan, Nat. Nanotechnol. 17, 934 (2022).
+accompanied by a reduction of spin susceptibility in the         [13] B. Padhi, R. Chitra, and P. W. Phillips, Phys. Rev. B 103,
+electron (majority carrier) layer, which can be detected by           125146 (2021).
+magnetic circular dichroism. Finally, it is noted that the       [14] C. Jin, Z. Tao, T. Li, Y. Xu, Y. Tang, J. Zhu, S. Liu, K.
+binding energy of trions can be further increased by                  Watanabe, T. Taniguchi, J. C. Hone et al., Nat. Mater. 20,
+applying a magnetic field, which we leave to future study.            940 (2021).
+                                                                 [15] Y. Zhang, H. Isobe, and L. Fu, arXiv:2005.04238.
+We hope our theoretical work stimulates experimental
+                                                                 [16] M. Davydova, Y. Zhang, and L. Fu, Phys. Rev. B 107,
+study of TMD electron-hole bilayers at commensurate                   224420 (2023).
+electron-hole density ratios.                                    [17] L. Ciorciaro, T. Smolenski, I. Morera, N. Kiper, S. Hiestand,
+                                                                      M. Kroner, Y. Zhang, K. Watanabe, T. Taniguchi, E. Demler
+Note added.—Very recently, evidence of spin-singlet trions
+                                                                      et al., Nature (London) 623, 509 (2023).
+have been observed in optical reflectance measurements           [18] K. Lee, P. Sharma, O. Vafek, and H. J. Changlani, Phys.
+and transport experiments in WSe2 =MoSe2 [66,67].                     Rev. B 107 (2023).
+                                                                 [19] V. Crépel and L. Fu, Phys. Rev. B 107, 235105 (2023).
+  We are grateful to Trithep Devakul and Aidan Reddy for         [20] I. Morera, M. Kanász-Nagy, T. Smolenski, L. Ciorciaro, A.
+helpful discussions. We thank Kin Fai Mak, Jie Shan, and              Imamoğlu, and E. Demler, Phys. Rev. Res. 5, L022048
+Feng Wang for their interest and feedback. This work was              (2023).
+
+
+                                                           196202-5
+                                     PHYSICAL REVIEW LETTERS 132, 196202 (2024)
+
+[21] X. Wang, K. Yasuda, Y. Zhang, S. Liu, K. Watanabe, T.            [44] J. Pei, J. Yang, R. Xu, Y.-H. Zeng, Y. W. Myint, S. Zhang, J.-
+     Taniguchi, J. Hone, L. Fu, and P. Jarillo-Herrero, Nat.               C. Zheng, Q. Qin, X. Wang, W. Jiang et al., Small 11, 6384
+     Nanotechnol. 17, 367 (2022).                                          (2015).
+[22] W. Zhao, B. Shen, Z. Tao, Z. Han, K. Kang, K. Watanabe, T.       [45] O. Witham, R. J. Hunt, and N. D. Drummond, Phys. Rev. B
+     Taniguchi, K. F. Mak, and J. Shan, Nature (London) 616, 61            97, 075424 (2018).
+     (2023).                                                          [46] See Supplemental Material at http://link.aps.org/
+[23] A. Kumar, N. C. Hu, A. H. MacDonald, and A. C. Potter,                supplemental/10.1103/PhysRevLett.132.196202, for addi-
+     Phys. Rev. B 106, L041116 (2022).                                     tional information on and detailed discussion of the support-
+[24] D. Guerci, J. Wang, J. Zang, J. Cano, J. H. Pixley, and A.            ing numerical work, which includes Refs. [47–54].
+     Millis, Sci. Adv. 9, eade7701 (2023).                            [47] S. Larentis, H. C. Movva, B. Fallahazad, K. Kim, A.
+[25] Y. Zhang and L. Fu, SciPost Phys. Core 6, 038 (2023).                 Behroozi, T. Taniguchi, K. Watanabe, S. K. Banerjee, and
+[26] Z. Tao, W. Zhao, B. Shen, P. Knüppel, K. Watanabe, T.                 E. Tutuc, Phys. Rev. B 97, 201407 (2018).
+     Taniguchi, J. Shan, and K. F. Mak, arXiv:2307.12205.             [48] P.-C. Yeh, W. Jin, N. Zaki, D. Zhang, J. T. Liou, J. T.
+[27] F. Wu, T. Lovorn, E. Tutuc, I. Martin, and A. MacDonald,              Sadowski, A. Al-Mahboob, J. I. Dadap, I. P. Herman, P.
+     Phys. Rev. Lett. 122, 086402 (2019).                                  Sutter et al., Phys. Rev. B 91, 041407 (2015).
+[28] W. Zhao, K. Kang, L. Li, C. Tschirhart, E. Redekop, K.           [49] B. Fallahazad, H. C. P. Movva, K. Kim, S. Larentis, T.
+     Watanabe, T. Taniguchi, A. Young, J. Shan, and K. F. Mak,             Taniguchi, K. Watanabe, S. K. Banerjee, and E. Tutuc, Phys.
+     arXiv:2207.02312.                                                     Rev. Lett. 116, 086601 (2016).
+[29] T. Devakul, V. Crépel, Y. Zhang, and L. Fu, Nat. Commun.        [50] A. Laturia, M. L. Van de Put, and W. G. Vandenberghe, npj
+     12, 6730 (2021).                                                      2D Mater. Appl. 2, 6 (2018).
+[30] H. Li, U. Kumar, K. Sun, and S.-Z. Lin, Phys. Rev. Res. 3,       [51] R. E. Johnson and S. Ranganathan, Phys. Rev. E 63, 056703
+     L032070 (2021).                                                       (2001).
+[31] V. Crépel and L. Fu, Phys. Rev. B 107, L201109 (2023).          [52] T. A. Arias, M. C. Payne, and J. D. Joannopoulos, Phys.
+[32] N. Morales-Durán, J. Wang, G. R. Schleder, M. Angeli, Z.              Rev. Lett. 69, 1077 (1992).
+     Zhu, E. Kaxiras, C. Repellin, and J. Cano, Phys. Rev. Res. 5,    [53] R. Sundararaman, K. Letchworth-Weaver, K. A. Schwarz,
+     L032022 (2023).                                                       D. Gunceler, Y. Ozhabes, and T. Arias, SoftwareX 6, 278
+[33] A. P. Reddy, F. F. Alsallom, Y. Zhang, T. Devakul, and L.             (2017).
+     Fu, Phys. Rev. B 108, 085117 (2023).                             [54] I. Mayer, Int. J. Quantum Chem. 90, 63 (2002).
+[34] C. Wang, X.-W. Zhang, X. Liu, Y. He, X. Xu, Y. Ran, T.           [55] G. Goldoni and F. M. Peeters, Phys. Rev. B 53, 4591
+     Cao, and D. Xiao, Phys. Rev. Lett. 132, 036501 (2023).                (1996).
+[35] T. Li, S. Jiang, B. Shen, Y. Zhang, L. Li, Z. Tao, T. Devakul,   [56] E. Mostaani, M. Szyniszewski, C. H. Price, R. Maezono, M.
+     K. Watanabe, T. Taniguchi, L. Fu et al., Nature (London)              Danovich, R. J. Hunt, N. D. Drummond, and V. I. Fal’ko,
+     600, 641 (2021).                                                      Phys. Rev. B 96, 075431 (2017).
+[36] A. Kou, B. E. Feldman, A. J. Levin, B. I. Halperin, K.           [57] D. Luo, D. D. Dai, and L. Fu, arXiv:2311.02143.
+     Watanabe, T. Taniguchi, and A. Yacoby, Science 345, 55           [58] I. V. Bondarev, O. L. Berman, R. Y. Kezerashvili, and Y. E.
+     (2014).                                                               Lozovik, Commun. Phys. 4, 134 (2021).
+[37] J. Cai, E. Anderson, C. Wang, X. Zhang, X. Liu, W.               [59] I. V. Bondarev and Y. E. Lozovik, Commun. Phys. 5, 315
+     Holtzmann, Y. Zhang, F. Fan, T. Taniguchi, K. Watanabe                (2022).
+     et al., Nature (London) 622, 63 (2023).                          [60] S. Conti, A. Perali, A. R. Hamilton, M. V. Milošević, F. M.
+[38] Y. Zeng, Z. Xia, K. Kang, J. Zhu, P. Knüppel, C. Vaswani,             Peeters, and D. Neilson, Phys. Rev. Lett. 130, 057001 (2023).
+     K. Watanabe, T. Taniguchi, K. F. Mak, and J. Shan,               [61] V. W. Scarola and S. Das Sarma, Phys. Rev. Lett. 95,
+     arXiv:2305.00973.                                                     033003 (2005).
+[39] Y. Zeng and A. H. MacDonald, Phys. Rev. B 102, 085154            [62] V. W. Scarola, E. Demler, and S. Das Sarma, Phys. Rev. A
+     (2020).                                                               73, 051601 (2006).
+[40] L. Ma, P. X. Nguyen, Z. Wang, Y. Zeng, K. Watanabe, T.           [63] Y. N. Joglekar, A. V. Balatsky, and S. Das Sarma, Phys. Rev.
+     Taniguchi, A. H. MacDonald, K. F. Mak, and J. Shan,                   B 74, 233302 (2006).
+     Nature (London) 598, 585 (2021).                                 [64] M. A. Semina, Phys. Solid State 61, 2218 (2019).
+[41] R. Qi, A. Y. Joe, Z. Zhang, Y. Zeng, T. Zheng, Q. Feng, E.       [65] Y. Mao, X. Ma, D. Wu, C. Lin, H. Shan, X. Wu, J. Zhao, A.
+     Regan, J. Xie, Z. Lu, T. Taniguchi et al., arXiv:2306.13265.          Zhao, and B. Wang, Nano Lett. 20, 8067 (2020).
+[42] L. Ma, P. X. Nguyen, Z. Wang, Y. Zeng, K. Watanabe, T.           [66] R. Qi, Q. Li, Z. Zhang, S. Chen, J. Xie, Y. Ou, Z. Cui, D. D.
+     Taniguchi, A. H. MacDonald, K. F. Mak, and J. Shan,                   Dai, A. Y. Joe, T. Taniguchi et al., arXiv:2312.03251.
+     Nature (London) 598, 585 (2021).                                 [67] P. X. Nguyen, R. Chaturvedi, L. Ma, P. Knuppel, K.
+[43] Y. Koo, H. Lee, T. Ivanova, A. Kefayati, V. Perebeinos, E.            Watanabe, T. Taniguchi, K. F. Mak, and J. Shan, arXiv:
+     Khestanova, V. Kravtsov, and K.-D. Park, Light 12, 59                 2312.12571.
+     (2023).
+
+
+
+
+                                                               196202-6
+

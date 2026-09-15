@@ -1,0 +1,59 @@
+{
+  "case_id": "random_honeycomb_a8_n64_s8803",
+  "initial_lattice": "honeycomb",
+  "initialization": "random",
+  "a_over_d": 8.0,
+  "Nh": 64,
+  "Ne": 128,
+  "seed": 8803,
+  "stages": 40,
+  "sweeps_per_stage": 200,
+  "attempted_moves": 1536000,
+  "tmax": 0.1,
+  "tmin": 2e-07,
+  "initial_energy_per_hole": 0.00969224882645753,
+  "final_mc_energy_per_hole": -1.1938575474166335,
+  "best_mc_energy_per_hole": -1.193857556722973,
+  "relaxed_energy_per_hole": -1.1957575069512294,
+  "ideal_seed_energy_per_hole": -1.1959564558340505,
+  "relaxed_minus_ideal": 0.0001989488828211261,
+  "max_mc_energy_drift": 1.2931877790833823e-12,
+  "quench_best": {
+    "energy": -76.52744643053806,
+    "max_force": 4.871795348227526e-05,
+    "iterations": 6000,
+    "success": false,
+    "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+  },
+  "quench_final": {
+    "energy": -76.52781363125511,
+    "max_force": 7.490168396214103e-05,
+    "iterations": 6000,
+    "success": false,
+    "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+  },
+  "max_force": 4.146623901123278e-08,
+  "relax_iterations": 6263,
+  "seconds": 447.64848437499313,
+  "hole_psi4": 0.15089348745557524,
+  "hole_psi6": 0.5018949338750491,
+  "excess_psi4": 0.10409186845202024,
+  "excess_psi6": 0.8791334599900732,
+  "eh_inplane_rms_d": 0.0022297386902439455,
+  "paired_fraction_within_0p25d": 1.0,
+  "final_order": "distorted_or_defective",
+  "before_refinement": {
+    "energy_per_hole": -1.1957470879883612,
+    "max_force": 7.490168396214103e-05
+  },
+  "refinement": {
+    "energy": -76.52848044487868,
+    "max_force": 4.146623901123278e-08,
+    "iterations": 263,
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "preconditioning": "invertible COM/relative/excess rescaling",
+    "com_scale": 181.01933598375618,
+    "electron_scale": 22.627416997969522
+  }
+}
